@@ -4,6 +4,9 @@ plugins {
 }
 apply plugin: 'com.android.library'
 apply plugin: 'maven-publish'
+apply plugin: 'com.github.dcendents.android-maven'
+
+group='com.github.andreiverdes'
 
 repositories {
     mavenCentral()
@@ -18,8 +21,7 @@ artifacts {
     archives sourcesJar
 }
 
-group = PROJECT_GROUP_ID
-version = PROJECT_VERSION
+version = "0.4.5"
 
 android {
     compileSdkVersion rootProject.ext.compileSdkVersion
